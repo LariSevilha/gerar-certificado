@@ -1,0 +1,70 @@
+#certificado{
+    position: relative;
+    margin: auto 10%;
+}
+
+#certificado #imagemFundo{
+    width: 100%;
+}
+
+#certificado #content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10%;
+    font-size: 1vw;
+    text-align: center;
+    padding: 0 19%;
+}
+
+#certificado #content h1{
+    font-weight: 600;
+    font-size: 5vw;
+    margin-bottom: 3%;
+}
+
+#certificado .texto{
+    margin: 2% 0;
+    font-size: 2vw;
+}
+
+#certificado .justify{
+    text-align: justify;
+}
+
+#certificado .texto span{
+    font-weight: 600;
+}
+
+#certificado #nomeParticipante{
+    font-size: 2.5vw;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#certificado h2{
+    margin-top: 3%;
+    font-size: 2vw;
+}
+
+#certificado #listaConteudos{
+    font-size: 1.5vw;
+}
+
+@media print{
+    .container{
+        display: none;
+    }
+
+    #certificado{
+        margin: 2% !important;
+    }
+}
+
+@page {
+  margin: 0.1cm;
+  size: landscape;
+  orientation: landscape;
+  size: A4 landscape;
+}
