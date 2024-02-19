@@ -25,5 +25,15 @@ window.onload = function() {
         document.getElementById("nomeMinistrante").textContent = nomeMinistrante;
         document.getElementById("dataCurso").textContent = dataFormatada;
         document.getElementById("cargaHoraria").textContent = cargaHoraria;
+
+        ClearInput();
     };
 };
+
+function ClearInput() {
+    document.getElementById("inputNome").value = "";
+    document.getElementById("inputNomeCurso").value = "";
+    document.getElementById("inputMinistrante").value = "";
+    document.getElementById("inputDataCurso").value = "";
+    document.getElementById("inputCargaHoraria").value = "";
+}
