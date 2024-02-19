@@ -1,16 +1,12 @@
-window.onload = function(){
+window.onload = function() {
+    var conteudos = [];
 
     var btnPrint = document.getElementById("btnPrint");
     btnPrint.onclick = function(){
         print();
     };
 
-   
-
-}
-window.onload = function() {
     var btnGerarCertificado = document.getElementById("btnGerarCertificado");
-    
     btnGerarCertificado.onclick = function() {
         var nomeParticipante = document.getElementById("inputNome").value;
         var tituloCurso = document.getElementById("inputNomeCurso").value;
@@ -26,7 +22,25 @@ window.onload = function() {
         document.getElementById("dataCurso").textContent = dataFormatada;
         document.getElementById("cargaHoraria").textContent = cargaHoraria;
 
+  
+        var listaConteudos = document.getElementById("listaConteudos");
+        listaConteudos.innerHTML = "";
+        conteudos.forEach(function(conteudo) {
+            var li = document.createElement("li");
+            li.textContent = conteudo;
+            listaConteudos.appendChild(li);
+        });
+
         ClearInput();
+    };
+
+    var btnAddInputConteudo = document.getElementById("btnAddInputConteudo");
+    btnAddInputConteudo.onclick = function() {
+        var inputConteudo = document.getElementById("inputConteudo").value;
+        if (inputConteudo.trim() !== "") {
+            conteudos.push(inputConteudo);
+            document.getElementById("inputConteudo").value = "";
+        }
     };
 };
 
