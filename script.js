@@ -18,6 +18,12 @@ window.onload = function() {
         var nomeMinistrante = document.getElementById("inputMinistrante").value;
         var dataCurso = document.getElementById("inputDataCurso").value;
         var cargaHoraria = document.getElementById("inputCargaHoraria").value;
+
+        document.getElementById("nomeParticipante").textContent = nomeParticipante;
+        document.getElementById("tituloCurso").textContent = tituloCurso;
+        document.getElementById("nomeMinistrante").textContent = nomeMinistrante;
+        document.getElementById("dataCurso").textContent = dataCurso;
+        document.getElementById("cargaHoraria").textContent = cargaHoraria;
     }
 };
 
