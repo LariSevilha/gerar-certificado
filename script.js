@@ -8,7 +8,6 @@ window.onload = function(){
    
 
 }
-
 window.onload = function() {
     var btnGerarCertificado = document.getElementById("btnGerarCertificado");
     
@@ -19,12 +18,12 @@ window.onload = function() {
         var dataCurso = document.getElementById("inputDataCurso").value;
         var cargaHoraria = document.getElementById("inputCargaHoraria").value;
 
+        var dataFormatada = moment(dataCurso).format('DD/MM/YYYY');
+      
         document.getElementById("nomeParticipante").textContent = nomeParticipante;
         document.getElementById("tituloCurso").textContent = tituloCurso;
         document.getElementById("nomeMinistrante").textContent = nomeMinistrante;
-        document.getElementById("dataCurso").textContent = dataCurso;
+        document.getElementById("dataCurso").textContent = dataFormatada;
         document.getElementById("cargaHoraria").textContent = cargaHoraria;
-    }
+    };
 };
-
-console.log(nomeParticipante)
